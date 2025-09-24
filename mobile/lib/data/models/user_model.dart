@@ -19,7 +19,7 @@ class UserModel {
       name: json['name'] ?? "",
       username: json['username'] ?? "",
       email: json['email'] ?? "",
-      profilePicture: json['profile_pic'] ?? "",
+      profilePicture: json['profile_pic'],
     );
   }
 }
