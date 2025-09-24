@@ -4,7 +4,7 @@ import 'login_viewmodel.dart';
 import '../../../core/services/auth_viewmodel.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({Key? key}) : super(key: key);
+  const LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {
