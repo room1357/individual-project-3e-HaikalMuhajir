@@ -1,45 +1,52 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.build/
-.buildlog/
-.history
-.svn/
-.swiftpm/
-migrate_working_dir/
+# =======================
+# Flutter / Dart (mobile)
+# =======================
+/mobile/build/
+/mobile/.dart_tool/
+/mobile/.packages
+/mobile/.flutter-plugins
+/mobile/.flutter-plugins-dependencies
+/mobile/.flutter-versions
 
-# IntelliJ related
+# Keep Android/iOS config, ignore only build/temp files
+/mobile/android/app/build/
+/mobile/android/.gradle/
+/mobile/ios/Pods/
+/mobile/ios/Runner.xcworkspace/
+/mobile/ios/build/
+
+# IDE files
+/mobile/.idea/
+.idea/
 *.iml
 *.ipr
 *.iws
-.idea/
+.vscode/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# Generated plugin files
+/mobile/generated_plugin_registrant.dart
 
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.pub-cache/
-.pub/
-/build/
+# Misc logs
+*.log
 
-# Symbolication related
-app.*.symbols
+# =======================
+# Node.js / Backend
+# =======================
+/backend/node_modules/
+/backend/dist/
+/backend/build/
 
-# Obfuscation related
-app.*.map.json
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# MacOS / Windows
+.DS_Store
+Thumbs.db
